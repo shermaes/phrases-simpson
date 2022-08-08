@@ -1,11 +1,14 @@
 import Logo from "../pngfind.com-simpsons-png-62392.png"
 import styled from "styled-components";
 
-export default function Welcome() {
+export default function Welcome(props) {
+    const {reqApi} = props;
+
+
     return(
         <ContentLogo>
         <WelcomeText>Bienvenido, para poder utilizar las frases pincha sobre la imagen</WelcomeText>
-       <ImageLogo src={Logo} alt="Logo Simpson"/>  
+       <ImageLogo src={Logo} alt="Logo Simpson" onClick={reqApi}/>  
       </ContentLogo>  
     )
 };
