@@ -8,7 +8,7 @@ export default function Character(props) {
     <ContentCharacter>
       <HeadTitle>{character}</HeadTitle>
       <ContainerImage>
-        <Image src={image} alt={character} /> 
+        <Image src={image} alt={character} />
       </ContainerImage>
       <PhraseText>{quote}</PhraseText>
     </ContentCharacter>

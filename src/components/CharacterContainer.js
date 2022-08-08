@@ -3,45 +3,42 @@ import Character from "./Character";
 
 export default function CharacterContainer(props) {
   const { characters, reqApi } = props;
-
-  //pasamos los characters al componente Character mediante props
-  //con el map, pasaremos uno por uno a Character
   return (
     <>
-        <ContainerCharacter>
-      {characters.map((character, index) => (
-        <Character dataCharacter={character} key={index} />
-      ))}
+      <ContainerCharacter>
+        {characters.map((character, index) => (
+          <Character dataCharacter={character} key={index} />
+        ))}
       </ContainerCharacter>
       <ContainerButton>
-      <Button onClick={reqApi}>Mostrar otros personajes</Button>
+        <Button onClick={reqApi}>Mostrar otros personajes</Button>
       </ContainerButton>
-      </>
+    </>
   );
 }
 
 const ContainerCharacter = styled.div`
-    display:flex;
+  display: flex;
 `;
 
 const ContainerButton = styled.div`
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 `;
 
 const Button = styled.button`
-    width: 250px;
-    background-color: lightgrey ;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 18px;
-    margin-top: 40px;
-    transition: all 0.2s ease-out;
+  width: 250px;
+  background-color: lightgrey;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 40px;
+  transition: all 0.2s ease-out;
 
-    &:hover{
+  &:hover {
     cursor: pointer;
     background-color: violet;
-    }
+  }
 `;
