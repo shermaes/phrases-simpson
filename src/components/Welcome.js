@@ -1,4 +1,4 @@
-import Logo from "../pngfind.com-simpsons-png-62392.png"
+import Logo from "../clipart1893157.png"
 import styled from "styled-components";
 
 export default function Welcome(props) {
@@ -31,7 +31,7 @@ const ContentLogo = styled.div`
 
 //haremos un texto que ira por encima de nuestro logo
 const WelcomeText = styled.p`
-  color: #2a9d8f;
+  color: white;
   text-align: center;
   font-weight: 900;
   padding: 50px 0 10px;
